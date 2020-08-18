@@ -136,39 +136,6 @@ let Portfolio = () => {
                 return false;
             }
         };
-        if (window.screen.width < 375) {
-            if (window.scrollY < 2100) {
-                nav.classList.remove("nav--brown");
-                logoSpan.classList.remove("nav__color--brown");
-                openmenu.classList.remove("nav__menuIcon--colorPortfolio");
-                closemenu.classList.remove("nav__menuIcon--colorPortfolio");
-                menu.classList.remove("nav__bgcolor--brown");
-            } else if (window.scrollY > 2100) {
-                nav.classList.add("nav--brown");
-                logoSpan.classList.add("nav__color--brown");
-                openmenu.classList.add("nav__menuIcon--colorPortfolio");
-                closemenu.classList.add("nav__menuIcon--colorPortfolio");
-                menu.classList.add("nav__bgcolor--brown");
-            } else {
-                return false;
-            }
-        } else {
-            if (window.scrollY < 2100) {
-                nav.classList.remove("nav--brown");
-                logoSpan.classList.remove("nav__color--brown");
-                openmenu.classList.remove("nav__menuIcon--colorPortfolio");
-                closemenu.classList.remove("nav__menuIcon--colorPortfolio");
-                menu.classList.remove("nav__bgcolor--brown");
-            } else if (window.scrollY > 2100) {
-                nav.classList.add("nav--brown");
-                logoSpan.classList.add("nav__color--brown");
-                openmenu.classList.add("nav__menuIcon--colorPortfolio");
-                closemenu.classList.add("nav__menuIcon--colorPortfolio");
-                menu.classList.add("nav__bgcolor--brown");
-            } else {
-                return false;
-            }
-        };
     });   
 };
 let Contact = () => {
@@ -189,25 +156,7 @@ let Contact = () => {
             } else {
                 return false;
             }
-        } else if ( window.screen.width < 380 ) {
-            if (window.scrollY < 3000) {
-                nav.classList.remove("nav--grey");
-                logoSpan.classList.remove("nav__color--grey");
-                openmenu.classList.remove("nav__menuIcon--colorContact");
-                closemenu.classList.remove("nav__menuIcon--colorContact");
-                menu.classList.remove("nav__bgcolor--grey");
-            } else if (window.scrollY > 3000) {
-                nav.classList.add("nav--grey");
-                logoSpan.classList.add("nav__color--grey");
-                openmenu.classList.add("nav__menuIcon--colorContact");
-                closemenu.classList.add("nav__menuIcon--colorContact");
-                menu.classList.add("nav__bgcolor--grey");
-            } else {
-                return false;
-            }
-        } else {
-            return false
-        };
+        }
     });  
 };
 
