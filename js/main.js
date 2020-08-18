@@ -141,6 +141,20 @@ let Portfolio = () => {
 let Contact = () => {
     window.addEventListener("scroll",function(){
         if (window.screen.width < 470) {
+            if (window.scrollY < 470) {
+                nav.classList.remove("nav--grey");
+                logoSpan.classList.remove("nav__color--grey");
+                openmenu.classList.remove("nav__menuIcon--colorContact");
+                closemenu.classList.remove("nav__menuIcon--colorContact");
+                menu.classList.remove("nav__bgcolor--grey");
+            } else {
+                nav.classList.add("nav--grey");
+                logoSpan.classList.add("nav__color--grey");
+                openmenu.classList.add("nav__menuIcon--colorContact");
+                closemenu.classList.add("nav__menuIcon--colorContact");
+                menu.classList.add("nav__bgcolor--grey");
+            }
+        } else {
             if (window.scrollY < 4000) {
                 nav.classList.remove("nav--grey");
                 logoSpan.classList.remove("nav__color--grey");
